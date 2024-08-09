@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Using Literals
+        var std={name:"Deepss",age:20,studies:"IT"};
+        document.write("<br>Strudent Name : "+std.name);
+        document.write("<br>Strudent Age : "+std.age);
+        document.write("<br>Strudent Studies : "+std.studies);
+
+        //Using Object
+        var std=new Object();
+        std.name="Deepss";
+        std.age=20;
+        std.studies="IT";
+        document.write("<br><br>Strudent Name : "+std.name);
+        document.write("<br>Strudent Age : "+std.age);
+        document.write("<br>Strudent Studies : "+std.studies);
+
+        //constructor
+        class student {
+            constructor(name,age,studies){
+                this.name=name;
+                this.age=age;
+                this.studies=studies;
+            }
+            display(){
+                document.write("<br><br>Strudent Name : "+this.name);
+                document.write("<br>Strudent Age : "+this.age);
+                document.write("<br>Strudent Studies : "+this.studies);
+            }
+        }
+        var stud1=new student("Deepthi",20,"IT");
+        stud1.display();
+
+        var stud2=new student("Deep",20,"IT");
+        stud2.display();
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function palindrome(){
+            let pal=document.getElementById("one").value;
+            let a=pal;
+            let b="";
+            for(let i=pal.length-1;i>=0;i--){
+                b=b+pal[i];
+            }
+            if(pal==b){
+                document.getElementById("two").innerHTML=pal+" is palindrome";
+            }
+            else{
+                document.getElementById("two").innerHTML=pal+" is not a palindrome";
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter the String : <input type="text" id="one"><br><br>
+    <button onclick="palindrome()">Check</button><br><br>
+    <div id="two"></div>
+</body>
+</html>

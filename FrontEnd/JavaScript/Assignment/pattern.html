@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function pattern(){
+            let i,j;
+            let res="* ";
+            let a=document.getElementById("one").value;
+            for(i=0;i<a;i++){
+                for(j=0;j<=i;j++){
+                    if(j<=i){
+                    document.write("* ");}
+                }
+                document.write("<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    Number of rows : <input type="text" name="" id="one"><br><br>
+    <button onclick="pattern()">Pattern</button><br><br>
+    <div id="two"></div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFun(){
+            alert("JavaScript Function Example");
+        }
+        function add(a,b){
+            let sum=a+b;
+            alert("sum : "+sum);
+        }
+        function sub(a,b){
+            let sub=a-b;
+            alert("Subtraction : "+sub);
+        }
+        function mul(a,b){
+            let mul=a*b;
+            alert("Multiplication : "+mul);
+        }
+        function div(a,b){
+            let div=a/b;
+            alert("Division : "+div);
+        }
+    </script>
+</head>
+<body>
+    <button onclick="myFun()">Click Here</button>
+    <br><br>
+    <button onclick="add(10,30)">Addition</button>
+    <br><br>
+    <button onclick="sub(101,30)">Subtraction</button>
+    <br><br>
+    <button onclick="mul(10,30)">Multiplication</button>
+    <br><br>
+    <button onclick="div(101,30)">Division</button>
+</body>
+</html>

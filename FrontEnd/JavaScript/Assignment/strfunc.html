@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function events(){
+            let str1=document.getElementById("one").value;
+            let str2=document.getElementById("two").value;
+            document.write("<b>String Length : </b>"+str1.length);
+            document.write("<br>");
+            document.write("<b>String CharAt : </b>"+str2.charAt(3));
+            document.write("<br>");
+            document.write("<b>String Slice : </b>"+str1.slice(1,3));
+            document.write("<br>");
+            document.write("<b>String substring : </b>"+str2.substring(1,3));
+            document.write("<br>");
+            document.write("<b>String substr : </b>"+str2.substr(2,7));
+            document.write("<br>");
+            document.write("<b>String toUpperCase : </b>"+str1.toUpperCase());
+            document.write("<br>");
+            document.write("<b>String toLowerCase : </b>"+str2.toLowerCase());
+            document.write("<br>");
+            document.write("<b>String concat : </b>"+str1.concat(str2));
+            document.write("<br>");
+            document.write("<b>String trim : </b>"+str2.trim());
+            document.write("<br>");
+            document.write("<b>String trimStart : </b>"+str2.trimStart());
+            document.write("<br>");
+            document.write("<b>String trimEnd : </b>"+str1.trimEnd());
+            document.write("<br>");
+            document.write("<b>String repeat : </b>"+str1.repeat(10));
+            document.write("<br>");
+            document.write("<b>String replace : </b>"+str2.replace("Deepthi","Deepss"));
+            document.write("<br>");
+            document.write("<b>String replaceAll : </b>"+str2.replaceAll("Deepthi","Darunika"));
+            document.write("<br>");
+            document.write("<b>String Split : </b>"+str2.split(" "));
+        }
+    </script>
+</head>
+<body>
+    Enter first String : <input type="text" name="" id="one"><br><br>
+    Enter second String : <input type="text" name="" id="two"><br><br>
+    <button onclick="events()">Click</button>
+</body>
+</html>

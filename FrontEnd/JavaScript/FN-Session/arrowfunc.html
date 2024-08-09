@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sum = () => 10+20 ;
+        document.write("Addition : "+sum());
+
+        let number=(x,y)=>x-y;
+        document.write("<br>Subtarct : "+number(10,5));
+
+        let mul=(x,y)=>{
+            return(x*y);
+        }
+        document.write("<br>Multiplication : "+mul(100,2));
+
+        const num=(a,b)=>{
+            if(a>b)
+            return a;
+            else
+            return b;
+        }
+        document.write("<br>Laregest Number : "+num(10,20));
+
+        let fact=(a)=>{
+            let fact=1;
+            for(let i=1;i<=a;i++){
+                fact=fact*i;
+        }
+        return fact;
+    }
+    document.write("<br>Factorial : "+fact(5));
+        
+    </script>
+    <br>
+    <!-- <button onclick="fact()">Click Here</button>
+    <div></div> -->
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function prime(){
+            let count,i;
+            count=1;
+            let a=parseInt(document.getElementById("one").value);
+            for(i=2;i<=a;i++){
+                if(a%i==0){
+                    count=count+1;
+                }
+            }
+            if(count<=2){
+                document.getElementById("two").innerHTML=a+" is a prime number";
+            }
+            else{
+                document.getElementById("two").innerHTML=a+" is not a prime number";
+            }
+        }
+    </script>
+</head>
+<body>
+    Enter a Number : <input type="text" id="one"><br><br>
+    <button onclick="prime()">Check</button><br><br>
+    <div id="two"></div>
+</body>
+</html>

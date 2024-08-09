@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fact(){
+            let fact=1;
+            let a=parseInt(document.getElementById("one").value);
+            for(let i=1;i<=a;i++){
+                fact=fact*i;
+        }
+            document.getElementById("two").innerHTML=fact;
+        }
+    </script>
+</head>
+<body>
+    Enter the number <input type="text" id="one" onfocus="fact()">
+    <br><br>
+    <div id="two">
+
+    </div>
+</body>
+</html>

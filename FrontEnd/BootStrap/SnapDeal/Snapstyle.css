@@ -1,0 +1,39 @@
+#one{
+    background-color: rgb(253, 50, 50);
+}
+#two{
+    height: 40px;
+}
+#three{
+    height: 30px;
+    width: 100%;
+}
+#box {
+    width: 500px;
+    height: 35px;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+#box1 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 35px;
+    width: 80px;
+}
+#cart
+{
+padding-left: 100px;
+padding-top: 5px;
+}
+#signin
+{
+padding-left: 100px;
+padding-top: 5px;
+}
+#d
+{
+    width: 100%;
+    height: 350px;
+}

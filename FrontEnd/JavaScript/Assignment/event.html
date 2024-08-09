@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add(){
+            let a=100;
+            let b=2;
+            sum=a+b;
+            document.getElementById("one").innerHTML=sum;
+            
+        }
+        function div(a,b){
+            let div=a/b;
+            alert("Division : "+div);
+        }
+        function mul(a,b){
+            let mul=a*b;
+            alert("Multiplication : "+mul);
+        }
+        function myFunction() {
+            alert("Page is loaded");
+          }
+    </script>
+</head>
+<body onload="myFunction()">
+    <button onmouseover="div(101,30)">Click Here</button><br><br>
+    <button onclick="add()">Click Here</button><br><br>
+    <div id="one"></div>
+    <button onmouseout="mul(10,30)">Click Here</button><br><br>
+    Enter <input type="text" onkeydown="div(10,2)">
+    <div id="three"></div>
+    
+</body>
+</html>
